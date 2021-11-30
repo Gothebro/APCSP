@@ -45,21 +45,29 @@ wn.bgpic("maze2.png") # other file names should be maze2.png, maze3.png
 # sample while loop:
 
 i = 0
-while (i < 3): # left 3 times
+while (i < 3): # move 3 times
+  move()
+  i = i + 1 
+i = 0
+while (i < 3): # turn left 3 times
   turn_left()
-  i = i + 1 
+  i = i + 1
 i = 0
-while (i < 3): # forward 3
+while (i < 2): # move 2 times
   move()
   i = i + 1 
-turn_left()
-i = 0
-while (i < 3): # forward 3
-  move()
-  i = i + 1 
-turn_left()
-move()
+robot.goto(startx, starty)
 
+i = 0
+j = 0
+while (i < 2):
+    while (j < 3):
+        move()
+        j = j + 1
+    j = 0
+    turn_left()
+    i = i + 1
+move()
 
 #---- end robot movement 
 

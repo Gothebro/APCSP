@@ -45,7 +45,7 @@ wn.bgpic("maze1.png") # other file names should be maze2.png, maze3.png
 # sample while loop:
 
 i = 0
-while (i < 3): # left 3 times
+while (i < 3): # forward 3
   turn_left()
   i = i + 1 
 i = 0
